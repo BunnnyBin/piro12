@@ -1,0 +1,134 @@
+         @media screen and (min-width: 991px){
+            .container_p4_2{width: 1000px;}
+            .container_p4_2 .client, .container_p4_2 .project, .container_p4_2 .hour, .container_p4_2 .worker{
+                width: 25%;
+            }
+        }
+        @media screen and (max-width:992px) {
+            #container_p4 .content .section1,#container_p4 .content .section2, .container_p4_2{
+                width: 100%;
+            }
+            .container_p4_2 .client, .container_p4_2 .project, .container_p4_2 .hour, .container_p4_2 .worker{
+                width: 50%;
+            }
+        }
+        *{
+            margin:0; padding:0;
+        }
+
+        #container_p4 .header{
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+            background-color: white;
+        }
+
+        #container_p4 .header .h{
+            font-size: 2em;
+            font-weight: bold;
+            color: darkblue;
+            padding: 10px 0;
+            background-color: white;
+        }
+        #container_p4 .header .p{
+            margin: 0 auto;
+            width: 500px;
+            background-color: white;
+            color: #444;
+        }
+        #container_p4 .content{
+            width:100%;
+            overflow: hidden;
+            background-color: white;
+        }
+        #container_p4 .section1{
+            float: left;
+            width:50%;
+            background-color: white;
+        }
+        #container_p4 .section1 .image{
+            padding: 20px 20px 10px 10px;
+            background-color: white;
+        }
+        #container_p4 .section1 img{
+            display: block;
+            width: 100%;
+        }
+        #container_p4 .section2{
+            float: left;
+            width:50%;
+            background-color: white;
+        }
+        #container_p4 .section2 .p1{
+            padding: 20px 10px 10px 10px;
+            background-color: white;
+            color: #444;
+        }
+        #container_p4 .section2 .p2{
+            padding: 10px;
+            background-color: white;
+            color: #444;
+        }
+        @keyframes section2-ani {
+            from{
+                margin-top: 100%;
+            }
+            to{
+                visibility: visible;
+                margin-top: 0%;
+            }
+        }
+        #container_p4 .section2 .p3 ,#container_p4 .section2 .p4,#container_p4 .section2 .p5{
+            color: #444;
+            visibility: hidden;
+            padding: 20px 10px;
+            overflow: hidden;
+            animation-duration: 2s;
+            animation-name: section2-ani;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            background-color: white;
+        }
+        #container_p4 .p3 img,#container_p4 .p4 img,#container_p4 .p5 img{
+            float: left;
+            padding-right: 10px;
+            width: 40px;
+            background-color: white;
+        }
+
+        #container_p4 .p3 .word1,#container_p4 .p4 .word1,#container_p4 .p5 .word1{
+            color: black;
+            float: left;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+        #container_p4 .p3 .word2,#container_p4 .p4 .word2,#container_p4 .p5 .word2{
+            float: left;
+            padding: 0 0 0 50px;
+            background-color: white;
+        }
+
+        .container_p4_2{
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 50px 0;
+            background-color: white;
+        }
+        .container_p4_2 .client, .container_p4_2 .project, .container_p4_2 .hour, .container_p4_2 .worker{
+            float: left;
+            text-align: center;
+            background-color: white;
+            padding: 10px 0;
+        }
+        .container_p4_2 .huge{
+            font-weight: bold;
+            color: darkslateblue;
+            font-size: 3em;
+            background-color: white;
+        }
+        .container_p4_2 .small{
+            color: darkslateblue;
+            background-color: white;
+        }

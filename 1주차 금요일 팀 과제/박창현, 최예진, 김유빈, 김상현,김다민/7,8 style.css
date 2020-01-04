@@ -1,0 +1,463 @@
+        .slide{height:300px;overflow:hidden;position:relative;}
+        .slide ul{width:calc(100% * 4);display:flex;transition:1s;}
+        .slide li{width:calc(100% / 4);height:300px;}
+        .slide li:nth-child(1){background-image:url(picture01.png);background-repeat:no-repeat;background-position:center;}
+        .slide li:nth-child(2){background-image:url(picture02.png);background-repeat:no-repeat;background-position:center;}
+        .slide li:nth-child(3){background-image:url(picture03.png);background-repeat:no-repeat;background-position:center;}
+        .slide li:nth-child(4){background-image:url(picture04.png);background-repeat:no-repeat;background-position:center;}
+        .slide input{display:none;}
+        .slide .bullet{position:absolute;bottom:20px;left:0;right:0;text-align:center;z-index:10;}
+        .slide .bullet label{width:10px;height:10px;border-radius:10px;border:2px solid #666;display:inline-block;background:#fff;font-size:0;transition:0.5s;cursor:pointer;}
+        /* 슬라이드 조작 */
+        #pos1:checked ~ ul{margin-left:0;}
+        #pos2:checked ~ ul{margin-left:-100%;}
+        #pos3:checked ~ ul{margin-left:-200%;}
+        #pos4:checked ~ ul{margin-left:-300%;}
+        /* bullet 조작 */
+        #pos1:checked ~ .bullet label:nth-child(1),
+        #pos2:checked ~ .bullet label:nth-child(2),
+        #pos3:checked ~ .bullet label:nth-child(3),
+
+        #p7-testi *{
+            margin:0 auto;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        #p7-testi{
+            width:100%; height:48vh;
+            margin:0 auto;
+            text-align:center;
+            padding:30px 0;
+        }
+        #p7-testi #title {
+            width:1000px;
+            margin:0 auto;
+            text-align:center;
+            margin-bottom:50px;
+        }
+        #p7-testi #content {
+            width:500px; height:24vh;
+            margin: 0 auto;
+            text-align:center;
+            overflow:hidden;
+            font-size:10px;
+        }
+        #p7-testi #content #person1 {
+            list-style:none;
+            margin:0 auto;
+            text-align:center;
+        }
+        #p7-testi #content #person1>div, ul {
+            float:left;
+            text-align:left;
+            margin:0 auto;
+            margin-bottom:10px;
+        }
+        #p7-testi #content #name {
+            font-size:22px;
+            font-style:bold;
+            margin-bottom:5px;
+        }
+        #p7-testi #content #job {
+            font-size:15px;
+            color:lightgray;
+            margin-bottom:7px;
+        }
+        #p7-testi #content ul {
+            margin-top:15px;
+            margin-left:4px;
+        }
+        #p7-testi #content #person1 ul {
+            text-align:left;
+            list-style:none;
+            width:380px;
+        }
+        #p7-testi #content #person2>div, ul {
+            float:left;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        #p7-testi #content #person2 ul {
+            text-align:left;
+            list-style:none;
+            width:380px;
+        }
+        #p7-testi #content #person3>div, ul {
+            float:left;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        #p7-testi #content #person3 ul {
+            text-align:left;
+            list-style:none;
+            width:380px;
+        }
+        #p7-testi #content #person4>div, ul {
+            float:left;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        #p7-testi #content #person4 ul {
+            text-align:left;
+            list-style:none;
+            width:380px;
+        }
+
+
+
+
+        #p7-team *{
+            margin:0 auto;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        #p7-team{
+            width:100%; height:50vh;
+            margin:0 auto;
+            text-align:center;
+            background-color:lightgrey;
+            padding:30px 0;
+        }
+        #p7-team #title {
+            width:1000px;
+            margin:0 auto;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        #p7-team #text {
+            text-align:center;
+            margin: 0 auto;
+            width: 1000px;
+            margin-bottom:30px;
+        }
+        #p7-team #content {
+            width:1000px; height:500px;
+            margin: 0 auto;
+            text-align:center;
+            overflow:hidden;
+        }
+        #p7-team #content ul li {
+            float:left;
+            margin-right:3px;
+        }
+        #p7-team #content #hidden #logo1, #p7-team #content #logo2, #p7-team #content #logo3, #p7-team #content #logo4 {
+            display:inline-block;
+        }
+        #p7-team #content #first {
+            position:relative;
+            overflow:hidden;
+        }
+        #p7-team #content #first #hidden {
+            visibility:none;
+            width:100%;
+            text-align:center;
+            position:absolute;
+            top:182px;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+            opacity:0.0;
+
+        }
+        #p7-team #content #first #hidden ul {
+            float:left;
+            margin:0 29%;
+            text-align:center;
+            overflow:hidden;
+        }
+        #p7-team #content #first #hidden ul li{
+            float: left;
+            text-align:center;
+            margin:0 auto;
+        }
+        #p7-team #content #first:hover > #hidden {
+            opacity:1.0;
+        }
+        #p7-team #content #first:hover > #info {
+            opacity:0.0;
+        }
+        #p7-team #content #first #info {
+            width:100%;
+            position:absolute;
+            top:202px;
+            text-align:center;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+        }
+        #p7-team #content #second {
+            position:relative;
+            overflow:hidden;
+        }
+        #p7-team #content #second #hidden ul {
+            float:left;
+            margin:0 29%;
+            text-align:center;
+        }
+        #p7-team #content #second #hidden ul li{
+            float: left;
+            text-align:center;
+            margin:0 auto;
+        }
+        #p7-team #content #second #hidden {
+            visibility:none;
+            width:100%;
+            text-align:center;
+            position:absolute;
+            top:182px;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+            opacity:0.0;
+        }
+        #p7-team #content #second:hover > #hidden {
+            opacity:1.0;
+        }
+        #p7-team #content #second:hover > #info {
+            opacity:0.0;
+        }
+        #p7-team #content #second #info {
+            width:100%;
+            position:absolute;
+            top:202px;
+            text-align:center;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+        }
+        #p7-team #content #third {
+            position:relative;
+            overflow:hidden;
+        }
+        #p7-team #content #third #hidden ul {
+            float:left;
+            margin:0 29%;
+            text-align:center;
+        }
+        #p7-team #content #third #hidden ul li{
+            float: left;
+            text-align:center;
+            margin:0 auto;
+        }
+        #p7-team #content #third #hidden {
+            visibility:none;
+            width:100%;
+            text-align:center;
+            position:absolute;
+            top:182px;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+            opacity:0.0;
+        }
+        #p7-team #content #third:hover > #hidden {
+            opacity:1.0;
+        }
+        #p7-team #content #third:hover > #info {
+            opacity:0.0;
+        }
+        #p7-team #content #third #info {
+            width:100%;
+            position:absolute;
+            top:202px;
+            text-align:center;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+        }
+        #p7-team #content #fourth {
+            position:relative;
+            overflow:hidden;
+        }
+        #p7-team #content #fourth #hidden ul {
+            float:left;
+            margin:0 29%;
+            text-align:center;
+        }
+        #p7-team #content #fourth #hidden ul li{
+            float: left;
+            text-align:center;
+            margin:0 auto;
+        }
+        #p7-team #content #fourth #hidden {
+            visibility:none;
+            width:100%;
+            text-align:center;
+            position:absolute;
+            top:182px;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+            opacity:0.0;
+        }
+        #p7-team #content #fourth:hover > #hidden {
+            opacity:1.0;
+        }
+        #p7-team #content #fourth:hover > #info {
+            opacity:0.0;
+        }
+        #p7-team #content #fourth #info {
+            width:100%;
+            position:absolute;
+            top:202px;
+            text-align:center;
+            margin:0 auto;
+            background-color:rgba(0,0,0,0.7);
+            color:white;
+        }
+
+
+        #p7-ourclients *{
+            margin:0 auto;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        #p7-ourclients{
+            width:100%; height:30vh;
+            margin:0 auto;
+            text-align:center;
+            padding:30px 0;
+        }
+        #p7-ourclients #title {
+            width:1000px;
+            margin:40px auto;
+            text-align:center;
+            margin-bottom:30px;
+        }
+        #p7-ourclients #content {
+            width:1000px; height:500px;
+            margin: 40px auto;
+            text-align:center;
+            overflow:hidden;
+        }
+        #p7-ourclients #content ul li {
+            float:left;
+            list-style:none;
+            opacity:0.7;
+            padding-right:20px;
+        }
+        #p7-ourclients #content ul li:hover {
+            opacity:1.0;
+        }
+
+
+        #p8 *{
+            margin:0 auto;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        #p8{
+            width:100%; height:60vh;
+            margin:0 auto;
+            text-align:center;
+            background-color:lightgrey;
+            padding:30px 0;
+        }
+        #p8 #title {
+            width:1000px;
+            margin:0 auto;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        #p8 #text {
+            width:500px;
+            margin:0 auto;
+            text-align:center;
+            margin-bottom:25px;
+        }
+        #p8 #content {
+            width:1000px; height:50vh;
+            margin: 0 auto;
+            text-align:center;
+            overflow:hidden;
+            position:relative;
+        }
+        #p8 #content ul li {
+            float:left;
+            text-align:center;
+            width:330px;
+            font-size:15px;
+            border-bottom:1px solid #000000;
+            box-sizing:border-box;
+            margin-right:2px;
+            background-color:white;
+        }
+        #p8 #content ul li:hover{
+            transform:scale(1.1);
+            box-shadow:0 15px 0 rgba(0,0,0,.2);
+        }
+        #p8 #content ul li:nth-child(1):hover > #plan1 #dollar, #p8 #content ul li:nth-child(1):hover > #plan1 #month {
+            display:none;
+        }
+        #p8 #content ul li:nth-child(2):hover > #plan2 #dollar, #p8 #content ul li:nth-child(2):hover > #plan2 #month {
+            display:none;
+        }
+        #p8 #content ul li:nth-child(2):hover > #plan2 #dollar, #p8 #content ul li:nth-child(2):hover > #plan2 #month {
+            display:none;
+        }
+        #p8 #content ul {
+            position:relative;
+        }
+        #p8 #content #plan1 #dollar {
+            font-size:25px;
+            position:absolute;
+            left:120px; top:20px;
+        }
+        #p8 #content #plan1 #price {
+            font-size:40px;
+            font-style:bold;
+            margin:10px 30px 25px 0;
+        }
+        #p8 #content #plan1 #month {
+            position:absolute;
+            left:170px; top:34px;
+        }
+        #p8 #content #plan{
+            margin-bottom:25px;
+            font-size:30px;
+            font-style:bold;
+        }
+        #p8 #content #info {
+            line-height:27px;
+        }
+        #p8 #content #plan2 #dollar {
+            font-size:25px;
+            position:absolute;
+            left:450px; top:20px;
+        }
+        #p8 #content #plan2 #price {
+            font-size:40px;
+            margin:10px 30px 25px 0;
+        }
+        #p8 #content #plan2 #month {
+            position:absolute;
+            left:505px; top:34px;
+        }
+        #p8 #content #plan3 #dollar {
+            font-size:25px;
+            position:absolute;
+            left:780px; top:20px;
+        }
+        #p8 #content #plan3 #price {
+            font-size:40px;
+            margin:10px 30px 25px 0;
+        }
+        #p8 #content #plan3 #month {
+            position:absolute;
+            left:835px; top:34px;
+        }
+        #p8 #content #choose {
+            width:60%;
+            margin:10px auto;
+            font-align:center;
+            background-color:skyblue;
+            border-radius:30px;
+        }
+        #p8 #content #choose a {
+            text-decoration:none;
+            color:white;
+        }
